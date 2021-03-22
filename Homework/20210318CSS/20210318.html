@@ -7,10 +7,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperion &#8211; Premium WordPress site</title>
     <link rel="icon" href="images/cropped-favicon-2.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* header */
+        .main-header {
+            background-image: url(/images/a.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 -35px;
+            width: 100%;
+            height: 705px;
+        }
+
+        .main-header .content {
+            background-color: rgba(43, 44, 50, 0.23);
+            width: 1200px;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .content .logo {
+            width: 180px;
+            margin: 20px 0 30px;
+        }
+
+        .content .logo img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .content .main-nav {
+            margin: auto;
+            display: flex;
+        }
+
+        .content .main-nav a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 5px 1em;
+        }
+
+        .main-header .head-title {
+            width: 100%;
+            height: 415px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .head-title .title-txt {
+            height: 160px;
+            margin-left: 20%;
+        }
+
+        .title-txt h2 {
+            font-size: 130px;
+            font-weight: 400;
+            line-height: 130px;
+        }
+
+        .title-txt h6 {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .head-txt {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .head-txt .head-txt-item {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Main */
+        .main {
+            display: flex;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .wrap-item {
+            width: 100%;
+            height: 100px;
+        }
+
+        .wrap-item .imag {}
+
+        .wrap-item .txt {}
+
+        .wrap-item .txt h2 {}
+
+        /* Footer */
+    </style>
 </head>
 
 <body>
-    <header></header>
+    <header class="main-header">
+        <div class="content">
+            <a href="#" class="logo">
+                <img src="images/head-logo.png" alt="">
+            </a>
+            <nav class="main-nav">
+                <a href="#">HOME</a>
+                <a href="#">PAGER</a>
+                <a href="#">FEATURES</a>
+                <a href="#">NEW</a>
+                <a href="#">SHOP</a>
+            </nav>
+        </div>
+        <div class="head-title">
+            <div class="title-txt">
+                <h2>The Power</h2>
+                <h6>OF IMAGINATION MAKES US INFINITE</h6>
+            </div>
+        </div>
+        <div class="head-txt">
+            <div class="head-txt-item">
+                <h3>
+                    <img src="" alt="">
+                    DEVELOPMENT
+                </h3>
+                <p>We work alongside national and international organizations.</p>
+            </div>
+            <div class="head-txt-item">
+                <h3>
+                    <img src="" alt="">
+                    INTEGRATION
+                </h3>
+                <p>Committed to conducting its business according to the highest...</p>
+            </div>
+            <div class="head-txt-item">
+                <h3>
+                    <img src="" alt="">
+                    RESPONSIBILITY
+                </h3>
+                <p>Responsible customer relations through clear communication....</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="wrap">
+            <div class="wrap-item">
+                <h1>Looking for a First-Class Business Plan</h1>
+                <div class="txt">
+                    <p>We’re a financial and consulting business company of professional thinkers, strategists, digital
+                        innovators, designers and problem solvers (everyone gets a mention). Our sense of curiosity
+                        brings thinkers, strategists, digital innovators, designers and problem solvers (everyone gets a
+                        mention). Our sense of curiosity brings brands to life, gets them talking, and makes sure
+                        they’re heard above.</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="wrap-item2">
+                <h1>Looking for a First-Class Business Plan</h1>
+                <div class="txt">
+                    <p>We’re a financial and consulting business company of professional thinkers, strategists, digital
+                        innovators, designers and problem solvers (everyone gets a mention). Our sense of curiosity
+                        brings thinkers, strategists, digital innovators, designers and problem solvers (everyone gets a
+                        mention). Our sense of curiosity brings brands to life, gets them talking, and makes sure
+                        they’re heard above.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-footer">
+
+    </div>
 </body>
 
 </html>
