@@ -15,50 +15,50 @@
         }
 
         /* header */
-        .main-header {
+        .header {
+            height: 90vh;
             background-image: url(/images/a.png);
             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 0 -35px;
-            width: 100%;
-            height: 705px;
+            display: flex;
+            flex-direction: column;
         }
 
-        .main-header .content {
+        .header .content {
             background-color: rgba(43, 44, 50, 0.23);
-            width: 1200px;
-            width: 100%;
-            padding: 20px;
             display: flex;
-            margin: auto;
             flex-direction: column;
+            padding: 20px
+                /* width: 1200px;
+            width: 100%;
+            margin: auto;          
             align-items: center;
-            box-sizing: border-box;
+            box-sizing: border-box; */
         }
 
         .content .logo {
             width: 180px;
-            margin: 20px 0 30px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .content .logo img {
             width: 100%;
-            vertical-align: middle;
         }
 
-        .content .main-nav {
+        .content .header-nav {
             margin: auto;
+            padding: 20px;
             display: flex;
         }
 
-        .content .main-nav a {
+        .content .header-nav a {
             text-decoration: none;
             color: rgb(255, 255, 255);
             padding: 5px 1em;
         }
 
-        .main-header .head-title {
-            width: 100%;
+        .header .head-title {
+            /* width: 100%; */
             height: 415px;
             color: #fff;
             display: flex;
@@ -66,135 +66,203 @@
             justify-content: space-around;
         }
 
-        .head-title .title-txt {
+        .header .head-title .title-txt {
             height: 160px;
             margin-left: 20%;
         }
 
-        .title-txt h2 {
+        .header .head-title .title-txt h2 {
             font-size: 130px;
             font-weight: 400;
             line-height: 130px;
         }
 
-        .title-txt h6 {
+        .header .head-title .title-txt h6 {
             font-size: 20px;
             font-weight: 400;
         }
 
-        .head-txt {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .head-txt .head-txt-item {
-            width: 100%;
+        .header .head-about {
+            max-width: 1200px;
             margin: 0 auto;
-        }
-
-        /* Main */
-        .main {
             display: flex;
         }
 
-        .wrap {
-            width: 100%;
-            height: 200px;
+        .header .head-about .head-about-item {
+            margin: 0 10px;
+            color: #fff;
             background-color: aqua;
         }
 
-        .wrap-item {
-            width: 100%;
-            height: 100px;
+        .head-about-item h2 {}
+
+        .head-about-item p {}
+
+        /* wrap */
+        .plan {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            padding: 80px 120px;
         }
 
-        .wrap-item .imag {}
+        .plan h1 {
+            box-sizing: border-box;
+            width: 270px;
+            text-align: left;
+            padding: 0 15px;
+            /* border-right: 3px solid #000; */
+        }
 
-        .wrap-item .txt {}
+        .plan .plan-txt {
+            box-sizing: border-box;
+            width: 870px;
+            padding: 0 15px;
+            column-count: 2;
+            column-gap: 30px;
+        }
 
-        .wrap-item .txt h2 {}
+        /* .plan .imag {}
+
+        .plan .txt {}
+
+        .plan .txt h2 {} */
+
+        .GetInTouch {
+            height: 200px;
+            display: flex;
+            margin: 0 auto;
+            background-color: #c2b697;
+        }
+
+        .GetInTouch .GetInTouch-txt {
+            width: 600px;
+            margin: 15px;
+            padding: 0 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            background-color: crimson;
+        }
+
+
+        .GetInTouch .GetInTouch-btn {
+            margin: auto;
+        }
+
+        .GetInTouch .GetInTouch-btn input {
+            width: 170px;
+            height: 50px;
+            margin: auto;
+            background-color: #fafafb;
+            color: rgb(119, 106, 89);
+            font-weight: bolder;
+            border: 1px solid #fafafb;
+            border-radius: 5px;
+        }
 
         /* Footer */
     </style>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="content">
-            <a href="#" class="logo">
-                <img src="images/head-logo.png" alt="">
-            </a>
-            <nav class="main-nav">
-                <a href="#">HOME</a>
-                <a href="#">PAGER</a>
-                <a href="#">FEATURES</a>
-                <a href="#">NEW</a>
-                <a href="#">SHOP</a>
-            </nav>
-        </div>
-        <div class="head-title">
-            <div class="title-txt">
-                <h2>The Power</h2>
-                <h6>OF IMAGINATION MAKES US INFINITE</h6>
-            </div>
-        </div>
-        <div class="head-txt">
-            <div class="head-txt-item">
-                <h3>
-                    <img src="" alt="">
-                    DEVELOPMENT
-                </h3>
-                <p>We work alongside national and international organizations.</p>
-            </div>
-            <div class="head-txt-item">
-                <h3>
-                    <img src="" alt="">
-                    INTEGRATION
-                </h3>
-                <p>Committed to conducting its business according to the highest...</p>
-            </div>
-            <div class="head-txt-item">
-                <h3>
-                    <img src="" alt="">
-                    RESPONSIBILITY
-                </h3>
-                <p>Responsible customer relations through clear communication....</p>
-            </div>
-        </div>
-    </header>
-
     <div class="main">
+        <header class="header">
+            <div class="content">
+                <a href="#" class="logo">
+                    <img src="images/head-logo.png" alt="">
+                </a>
+                <nav class="header-nav">
+                    <a href="#">HOME</a>
+                    <a href="#">PAGER</a>
+                    <a href="#">FEATURES</a>
+                    <a href="#">NEW</a>
+                    <a href="#">SHOP</a>
+                </nav>
+            </div>
+            <div class="head-title">
+                <div class="title-txt">
+                    <h2>The Power</h2>
+                    <h6>OF IMAGINATION MAKES US INFINITE</h6>
+                </div>
+            </div>
+            <div class="head-about">
+                <div class="head-about-item">
+                    <h3>
+                        <img src="" alt="">
+                        DEVELOPMENT
+                    </h3>
+                    <p>We work alongside national and international organizations.</p>
+                </div>
+                <div class="head-about-item">
+                    <h3>
+                        <img src="" alt="">
+                        INTEGRATION
+                    </h3>
+                    <p>Committed to conducting its business according to the highest...</p>
+                </div>
+                <div class="head-about-item">
+                    <h3>
+                        <img src="" alt="">
+                        RESPONSIBILITY
+                    </h3>
+                    <p>Responsible customer relations through clear communication....</p>
+                </div>
+            </div>
+        </header>
         <div class="wrap">
-            <div class="wrap-item">
-                <h1>Looking for a First-Class Business Plan</h1>
-                <div class="txt">
-                    <p>We’re a financial and consulting business company of professional thinkers, strategists, digital
-                        innovators, designers and problem solvers (everyone gets a mention). Our sense of curiosity
-                        brings thinkers, strategists, digital innovators, designers and problem solvers (everyone gets a
-                        mention). Our sense of curiosity brings brands to life, gets them talking, and makes sure
-                        they’re heard above.</p>
+            <div class="main">
+                <div class="plan">
+                    <div class="plan-title">
+                        <h1>Looking for a First-Class Business Plan</h1>
+                    </div>
+                    <div class="plan-txt">
+                        <p>We’re a financial and consulting business company of professional thinkers, strategists,
+                            digital
+                            innovators, designers and problem solvers (everyone gets a mention). Our sense of curiosity
+                            brings thinkers, strategists, digital innovators, designers and problem solvers (everyone
+                            gets a
+                            mention). Our sense of curiosity brings brands to life, gets them talking, and makes sure
+                            they’re heard above.</p>
+                    </div>
+                </div>
+                <div class="GetInTouch">
+                    <div class="GetInTouch-txt">
+                        <h1>Unleash Your Team’s Productive Power</h1>
+                        <p>The truly scarce resources now are the time, the talent, and the energy of the people.</p>
+                    </div>
+                    <div class="GetInTouch-btn">
+                        <input type="button" class="button" , value="GET IN TOUCHS">
+                    </div>
+                </div>
+                <div class="service">
+                    <h1>Why Traders Choose Us</h1>
+                    <div class="service-conter">
+                        <div class="service-img"></div>
+                        <div class="list-group">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="https://picsum.photos/60/60?random=1">
+                                </div>
+                                <div class="txt">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quaerat id
+                                    voluptatem omnis
+                                    placeat libero tempora, similique temporibus nemo praesentium! Quam laboriosam
+                                    facere
+                                    reprehenderit
+                                    et error? Natus reprehenderit aut fugit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="wrap">
-            <div class="wrap-item2">
-                <h1>Looking for a First-Class Business Plan</h1>
-                <div class="txt">
-                    <p>We’re a financial and consulting business company of professional thinkers, strategists, digital
-                        innovators, designers and problem solvers (everyone gets a mention). Our sense of curiosity
-                        brings thinkers, strategists, digital innovators, designers and problem solvers (everyone gets a
-                        mention). Our sense of curiosity brings brands to life, gets them talking, and makes sure
-                        they’re heard above.</p>
-                </div>
-            </div>
+        <div class="main-footer">
         </div>
-
     </div>
 
-    <div class="main-footer">
-
-    </div>
 </body>
 
 </html>
