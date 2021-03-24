@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/Toyota-icon.png">
+    <link rel="icon" href="images/Toyota-icon.ico">
     <link rel="stylesheet" href="/css/Reset.css">
-    <title>Advantages</title>
+    <title>TOYOYA TNGA</title>
     <style>
+        .clear {
+            clear: both;
+        }
+
         .AD {
             width: 960px;
             margin: 0 auto;
             padding-top: 96px;
-            background-color: aquamarine;
         }
 
         .AD-title h2 {
             text-align: center;
             font-size: 40px;
             font-weight: bold;
-            background-color: azure;
         }
 
-        .AD-title .AD-title-line {
+        .AD-title-line {
             display: block;
             width: 38px;
             height: 4px;
@@ -31,14 +33,14 @@
             background-color: #000000;
         }
 
-        .AD .AD-Tag {
+        .AD-link {
             max-width: 960px;
             margin: 50px auto 97px;
 
             background-color: burlywood;
         }
 
-        .AD .AD-Tag .tag {
+        .AD-link-tag {
             width: 960px;
             height: 100%;
             background-color: #fff;
@@ -49,62 +51,488 @@
             justify-content: space-between;
         }
 
-        .AD .AD-Tag .tag a {
-            /* width: 192px; */
+        .AD-link-tag a {
             width: 184px;
             text-align: center;
             text-decoration: none;
             font-size: 20px;
             color: #000000;
-
-            /* margin: 5; */
             border: 1px dotted #000;
         }
 
-        .AD .AD-Tag .tag a div {
+        .AD-link-tag a div {
             padding: 10px;
             border-bottom: 2px solid #ae0014;
             transition: 0.5s;
         }
 
-        .AD .AD-Tag .tag a div:hover {
+        .AD-link-tag a div:hover {
             background-color: #ae0014;
             color: white;
+        }
+
+        .AD-item {}
+
+        /*01, 03, 05*/
+        .AD-item-driving,
+        .AD-item-comfort,
+        .AD-item-pride {
+            width: 960px;
+            height: 812px;
+            margin: 30px;
+            position: relative;
+            /* background-color: aqua; */
+        }
+
+        .AD-item-driving .item-txt,
+        .AD-item-comfort .item-txt,
+        .AD-item-pride .item-txt {
+            width: 355px;
+            height: 388px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .AD-item-driving .item-txt .txt-title,
+        .AD-item-comfort .item-txt .txt-title,
+        .AD-item-pride .item-txt .txt-title {
+            background-color: #ae0014;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #EEEEEE;
+        }
+
+        .AD-item-driving .item-txt .txt-title span,
+        .AD-item-comfort .item-txt .txt-title span,
+        .AD-item-pride .item-txt .txt-title span {
+            font-size: 110px;
+            transform: rotate(90deg);
+        }
+
+        .AD-item-driving .item-txt .txt-title h2,
+        .AD-item-comfort .item-txt .txt-title h2,
+        .AD-item-pride .item-txt .txt-title h2 {
+            font-size: 50px;
+        }
+
+        .AD-item-driving .item-txt .txt-content,
+        .AD-item-comfort .item-txt .txt-content,
+        .AD-item-pride .item-txt .txt-content {
+            background-color: #000000;
+            color: #EEEEEE;
+            height: 228px;
+            padding: 20px;
+        }
+
+        .AD-item-driving .item-txt .txt-content h3,
+        .AD-item-comfort .item-txt .txt-content h3,
+        .AD-item-pride .item-txt .txt-content h3 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .AD-item-driving .item-txt .txt-content p,
+        .AD-item-comfort .item-txt .txt-content p,
+        .AD-item-pride .item-txt .txt-content p {
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 30px;
+        }
+
+        .AD-item-driving .item-video,
+        .AD-item-comfort .item-video,
+        .AD-item-pride .item-video {
+            width: 695px;
+            height: 430px;
+            position: absolute;
+            top: 119px;
+            right: 80px;
+            z-index: 0;
+        }
+
+        .AD-item-driving .item-special,
+        .AD-item-comfort .item-special,
+        .AD-item-pride .item-special {
+            background-color: #eeeeee;
+            width: 652px;
+            height: 245px;
+            padding: 15px;
+            margin: 15px;
+            position: absolute;
+            bottom: 0;
+            left: 25px;
+            z-index: 1;
+        }
+
+        .AD-item-driving .item-special h3,
+        .AD-item-comfort .item-special h3,
+        .AD-item-pride .item-special h3 {
+            display: inline-block;
+            color: #ae0014;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .AD-item-driving .item-special span,
+        .AD-item-comfort .item-special span,
+        .AD-item-pride .item-special span {
+            display: inline-block;
+            width: 400px;
+            height: 2px;
+            background-color: #ae0014;
+            margin: 0 0 5px 3px;
+        }
+
+        .AD-item-driving .item-special h4,
+        .AD-item-comfort .item-special h4,
+        .AD-item-pride .item-special h4 {
+            background-color: black;
+            color: white;
+            padding: 5px 8px;
+            display: inline-block;
+            margin: 10px 0 7px;
+            border-radius: 5px;
+        }
+
+        .AD-item-driving .item-special li,
+        .AD-item-comfort .item-special li,
+        .AD-item-pride .item-special li {
+            list-style: none;
+            color: gray;
+            font-size: 16px;
+            padding-left: 2em;
+            text-indent: -1em;
+            font-weight: 600;
+        }
+
+        .AD-item-driving .item-special li::before,
+        .AD-item-comfort .item-special li::before,
+        .AD-item-pride .item-special li::before {
+            content: "ㆍ";
+            color: rgb(245, 29, 29);
+        }
+
+        .color-block-left {
+            width: 439px;
+            height: 290px;
+            background-color: #EEEEEE;
+            position: relative;
+            left: 521px;
+            top: -350px;
+        }
+
+        /*02, 04*/
+        .AD-item-security,
+        .AD-item-user {
+            width: 960px;
+            height: 812px;
+            position: relative;
+            /* background-color: cornflowerblue; */
+        }
+
+        .AD-item-security .item-txt,
+        .AD-item-user .item-txt {
+            width: 355px;
+            height: 388px;
+            position: relative;
+            left: 605px;
+            z-index: 1;
+        }
+
+        .AD-item-security .item-txt .txt-title,
+        .AD-item-user .item-txt .txt-title {
+            background-color: #ae0014;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #EEEEEE;
+        }
+
+        .AD-item-security .item-txt .txt-title span,
+        .AD-item-user .item-txt .txt-title span {
+            font-size: 110px;
+            transform: rotate(90deg);
+        }
+
+        .AD-item-security .item-txt .txt-title h2,
+        .AD-item-user .item-txt .txt-title h2 {
+            font-size: 50px;
+        }
+
+        .AD-item-security .item-txt .txt-content,
+        .AD-item-user .item-txt .txt-content {
+            background-color: #000000;
+            color: #EEEEEE;
+            height: 228px;
+            padding: 20px;
+        }
+
+        .AD-item-security .item-txt .txt-content h3,
+        .AD-item-user .item-txt .txt-content h3 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .AD-item-security .item-txt .txt-content p,
+        .AD-item-user .item-txt .txt-content p {
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 30px;
+        }
+
+        .AD-item-security .item-video,
+        .AD-item-user .item-video {
+            width: 695px;
+            height: 430px;
+            position: absolute;
+            top: 120px;
+            z-index: 0;
+        }
+
+        .AD-item-security .item-special,
+        .AD-item-user .item-special {
+            background-color: #eeeeee;
+            width: 652px;
+            height: 148px;
+            padding: 15px;
+            margin: 15px;
+            position: absolute;
+            bottom: 95px;
+            right: 10px;
+            z-index: 1;
+        }
+
+        .AD-item-security .item-special h3,
+        .AD-item-user .item-special h3 {
+            display: inline-block;
+            color: #ae0014;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .AD-item-security .item-special span,
+        .AD-item-user .item-special span {
+            display: inline-block;
+            width: 400px;
+            height: 2px;
+            background-color: #ae0014;
+            margin: 0 0 5px 3px;
+        }
+
+        .AD-item-security .item-special h4,
+        .AD-item-user .item-special h4 {
+            background-color: black;
+            color: white;
+            padding: 5px 8px;
+            display: inline-block;
+            margin: 10px 0 7px;
+            border-radius: 5px;
+        }
+
+        .AD-item-security .item-special li,
+        .AD-item-user .item-special li {
+            list-style: none;
+            color: gray;
+            font-size: 16px;
+            padding-left: 2em;
+            text-indent: -1em;
+            font-weight: 600;
+        }
+
+        .AD-item-security .item-special li::before,
+        .AD-item-user .item-special li::before {
+            content: "ㆍ";
+            color: rgb(245, 29, 29);
+        }
+
+        .color-block-right {
+            width: 518px;
+            height: 413px;
+            background-color: #EEEEEE;
+            position: relative;
+            left: 260px;
+            top: -350px
         }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <div class="header"></div>
+        <!-- <div class="header"></div> -->
         <div class="AD">
             <div class="AD-title">
                 <h2>五大優勢</h2>
                 <span class="AD-title-line"></span>
             </div>
-            <div class="AD-Tag">
-                <div class="tag">
-                    <a href="#">
+            <div class="AD-link">
+                <div class="AD-link-tag">
+                    <a href="#driving">
                         <div>操控樂趣</div>
                     </a>
-                    <a href="#">
+                    <a href="#security">
                         <div>安全守護</div>
                     </a>
-                    <a href="#">
+                    <a href="#comfort">
                         <div>乘坐舒適</div>
                     </a>
-                    <a href="#">
+                    <a href="#user">
                         <div>以人為本</div>
                     </a>
-                    <a href="#">
+                    <a href="#pride">
                         <div>引以為傲</div>
                     </a>
                 </div>
             </div>
             <div class="AD-item">
+                <section class="AD-item-driving" id="driving">
+                    <div class="item-txt">
+                        <div class="txt-title">
+                            <span>01</span>
+                            <h2>操控快樂</h2>
+                        </div>
+                        <div class="txt-content">
+                            <h3>人人滿意的駕駛體驗</h3>
+                            <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，
+                                享受隨心馳騁的行駛快感。</p>
+                        </div>
+                    </div>
+                    <div class="color-block-left"></div>
+                    <div class="item-video">
+                        <a href="https://www.youtube.com/watch?v=WH9kmoDw0fI&t=46s">
+                            <img src="/images/01-video-button.png">
+                        </a>
+                    </div>
+                    <div class="item-special">
+                        <h3>因為我們做了這些革新</h3>
+                        <span></span>
+                        <h4>低重心設計</h4>
+                        <li>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。</li>
+                        <h4>車體剛性強化</h4>
+                        <li>車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</li>
+                        <h4>四輪獨立懸吊</h4>
+                        <li>搭載全新四輪獨立懸吊設定，透過懸吊的高承載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提升駕馭樂趣。</li>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                <section class="AD-item-security" id="security">
+                    <div class="item-txt">
+                        <div class="txt-title">
+                            <h2>安全守護</h2>
+                            <span>02</span>
+                        </div>
+                        <div class="txt-content">
+                            <h3>行車更安心的高剛性車體</h3>
+                            <p>您的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如享受旅程、毫無後顧之憂。</p>
+                        </div>
+                    </div>
+                    <div class="color-block-right"></div>
+                    <div class="item-video">
+                        <a href="https://youtu.be/A9-cReYqtnM?t=46">
+                            <img src="/images/02-video-button.png">
+                        </a>
+                    </div>
+                    <div class="item-special">
+                        <h3>因為我們做了這些革新</h3>
+                        <span></span>
+                        <h4>主動安全</h4>
+                        <li>以先進的TSS系統，主動偵測路況，輔助駕駛判斷路況並维持行安全。</li>
+                        <h4>被動安全</h4>
+                        <li>堅固的高剛性車體，使用熱沖壓材料的高強度抗扭鋼板，強化座艙對意外事故的保護力。</li>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                <section class="AD-item-comfort" id="comfort">
+                    <div class="item-txt">
+                        <div class="txt-title">
+                            <span>03</span>
+                            <h2>乘坐舒適</h2>
+                        </div>
+                        <div class="txt-content">
+                            <h3>令人放鬆舒適的車室空間</h3>
+                            <p>車室空間設計著重人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性致力實現長途駕駛不疲勞的舒適駕馭體驗。</p>
+                        </div>
+                    </div>
+                    <div class="color-block-left"></div>
+                    <div class="item-video">
+                        <a href="https://youtu.be/SMNtG6-gS2M?t=46">
+                            <img src="/images/03-video-button.png">
+                        </a>
+                    </div>
+                    <div class="item-special">
+                        <h3>因為我們做了這些革新</h3>
+                        <span></span>
+                        <h4>駕駛位置最佳化</h4>
+                        <li>針對駕駛位置進行微底的修改，讓駕馭者可如同握手般自然且舒迪地操控方向盤。</li>
+                        <h4>駕馭視野佳</h4>
+                        <li>考量駕駛坐進内的高度，透過前擋風玻璃位置的調整，達到盲區極小化，使駛視野更開闊，同步提升駕馭安全。</li>
+                        <h4>更寧靜的車室</h4>
+                        <li>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座的震動抑制在最小限度，提供乘客舒適安靜的感受。</li>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                <section class="AD-item-user" id="user">
+                    <div class="item-txt">
+                        <div class="txt-title">
+                            <h2>以人為本</h2>
+                            <span>04</span>
+                        </div>
+                        <div class="txt-content">
+                            <h3>使用者導向的貼心設計</h3>
+                            <p>藉由高度人性化的介面整合、傳遞，車輛資訊豐富日常駕駛體驗。從提升油耗表現到行李廂空間最適化，均細心考量，更加貼近使用者真正所需與習慣，並給予即時回應。</p>
+                        </div>
+                    </div>
+                    <div class="color-block-right"></div>
+                    <div class="item-video">
+                        <a href="https://youtu.be/MniLwJEoNgg?t=46">
+                            <img src="/images/04-video-button.png">
+                        </a>
+                    </div>
+                    <div class="item-special">
+                        <h3>因為我們做了這些革新</h3>
+                        <span></span>
+                        <h4>優異油耗表現</h4>
+                        <li>以AURIS 為例，更強勁的高效引擎將熱效率提升至40%，達到世界級水準，屢屢突破燃油效率新境界。</li>
+                        <h4>行李箱空間最適化</h4>
+                        <li>以PRIUS為例，透過將電池位置移到後座下方，讓行李擁有更大的空間。</li>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+                <section class="AD-item-pride" id="pride">
+                    <div class="item-txt">
+                        <div class="txt-title">
+                            <span>05</span>
+                            <h2>引以為傲</h2>
+                        </div>
+                        <div class="txt-content">
+                            <h3>極具吸引力的精心設計</h3>
+                            <p>TNGA車款擁有讓人忍不住回頭的新潮外觀、讓駕駛充滿自信的駕馭快感!不僅讓車主能展現個人風格，也能讓擁有者都能引以為傲。</p>
+                        </div>
+                    </div>
+                    <div class="color-block-left"></div>
+                    <div class="item-video">
+                        <a href="https://youtu.be/eqFHWdDMXc0?t=46">
+                            <img src="/images/05-video-button.png">
+                        </a>
+                    </div>
+                    <div class="item-special">
+                        <h3>因為我們做了這些革新</h3>
+                        <span></span>
+                        <h4>設計概念</h4>
+                        <li>TNGA低重心設計，不懂呈現更低伏的運動化外觀，更满究高品質内装的一致性。</li>
+                        <h4>環保概念</h4>
+                        <li>為了對環境保護盡一份心力，我們全面提升傳統引擎、變速箱與油電複合動力的動力效能。</li>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+
             </div>
         </div>
-        <div class="footer"></div>
+    </div>
     </div>
 </body>
 
