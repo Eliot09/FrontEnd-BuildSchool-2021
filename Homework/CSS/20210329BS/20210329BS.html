@@ -26,7 +26,7 @@
             width: 100%;
         }
 
-        .title-bg .txt {
+        /* .title-bg .txt {
             background-color: rgba(9, 78, 126, .9);
             position: absolute;
             top: 0;
@@ -36,50 +36,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        }
+        } */
 
-        .title-bg .txt p {
+        /* .title-bg .txt p {
             color: rgb(255, 255, 255);
             font-size: 20px;
             text-align: center;
-        }
+        } */
 
-        .container.plan .row.text-center {
-            margin: 30px;
-        }
+        /* @media screen and (min-width: 768px) {
+            .card1 {
+                order: 1;
+            }
 
-        .container.plan .row.text-center .col-3 span {
-            margin: 30px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .container.plan .row.text-center .col-3 img {
-            margin: 20px 0 40px 0;
-            height: 20%;
-        }
-
-        .container.plan .row.text-center .col-3 p {
-            margin: 20px 0 20px 0;
-            color: rgb(245, 0, 56);
-        }
-
-        .container.team .row.text-center .col-3 {
-            margin-bottom: 90px;
-        }
-
-        .container.team .row.text-center .col-3 .team-img.row {
-            height: 55%;
-        }
-
-        .container.team .row.text-center .col-3 .team-img.row .col {
-            margin: 50px 0 20px 0;
-        }
-
-        .container.team .row.text-center .col-3 .h4 {
-            font-weight: bold;
-            text-align: center;
-        }
+            .card2 {
+                order: 2;
+            }
+        } */
     </style>
 </head>
 
@@ -130,9 +103,9 @@
         </div>
         <div class="main">
             <div class="container">
-                <div class="card w-100">
-                    <div class="row my-5">
-                        <div class="col-6">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
                             <div class="card">
                                 <img src="https://fakeimg.pl/96x49/aaaaaa/eeeeee"
                                     class="w-25 rounded mx-auto d-block m-5">
@@ -145,7 +118,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="card-body w-75 mx-auto">
                                 <h5 class="card-title text-center my-3 font-weight-bold">實作及就業導向的軟體開發學校</h5>
                                 <p class="card-text my-3">因應數位新時代的來臨，軟體、App、IoT
@@ -157,9 +130,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-100">
-                    <div class="row my-5">
-                        <div class="col-6">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-last">
+                            <div class="card">
+                                <img src="./images/01.png" class="w-25 rounded mx-auto d-block m-5">
+                                <span class="card-title text-center h3 font-weight-bold">動手實作才是真學習</span>
+                                <div class="card-body w-75 mx-auto"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-first">
                             <div class="card-body w-75 mx-auto">
                                 <h5 class="card-title text-center w-75 mx-auto my-3 font-weight-bold">打造專案作品的學習方式
                                     (Project-based Learning)</h5>
@@ -168,25 +148,18 @@
                                     Learn how to learn，以因應變化多端的軟體開發技能，及自主尋找解答的能力。</p>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <img src="./images/01.png" class="w-25 rounded mx-auto d-block m-5">
-                                <span class="card-title text-center h3 font-weight-bold">動手實作才是真學習</span>
-                                <div class="card-body w-75 mx-auto"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="card w-100">
-                    <div class="row my-5">
-                        <div class="col-6">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
                             <div class="card">
                                 <img src="./images/02.png" class="w-25 rounded mx-auto d-block m-5">
                                 <span class="card-title text-center h3 font-weight-bold">就業銜接</span>
                                 <div class="card-body w-75 mx-auto"></div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="card-body w-75 mx-auto">
                                 <h5 class="card-title text-center mx-auto my-3 font-weight-bold" style="width: 70%;">
                                     真正企業職場所需技能 (Career
@@ -200,9 +173,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-100">
-                    <div class="row my-5">
-                        <div class="col-6">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-last">
+                            <div class="card">
+                                <img src="./images/03.png" class="w-25 rounded mx-auto d-block m-5">
+                                <span class="card-title text-center h3 font-weight-bold">連結及影響力</span>
+                                <div class="card-body w-75 mx-auto"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 order-md-first">
                             <div class="card-body w-75 mx-auto">
                                 <h5 class="card-title text-center w-50 mx-auto my-3 font-weight-bold">企業導師的連結(Mentor
                                     Network)</h5>
@@ -210,14 +191,6 @@
                                     每一位在軟體開發上有實務經驗的企業導師，他們是各大企業的主管、資深軟體工程師或CTO，其人際連結及資源將帶給同學更多更好的就業機會，你將比別人站得更高，看得更遠!
                                 </p>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <img src="./images/03.png" class="w-25 rounded mx-auto d-block m-5">
-                                <span class="card-title text-center h3 font-weight-bold">連結及影響力</span>
-                                <div class="card-body w-75 mx-auto"></div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -230,7 +203,7 @@
             </div>
             <div class="container plan">
                 <div class="row text-center">
-                    <div class="col-12">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <span class="d-block">第 1 - 4 個月</span>
                         <img src=" ./images/plan01.png" alt="">
                         <p class="h4">程式基礎教學</p>
@@ -239,7 +212,7 @@
                             <li>企業主管/創業家/CTO 演講</li>
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <span class="d-block">第 5 - 6 個月</span>
                         <img src="./images/plan02.png" alt="">
                         <p class="h4">專案及作品導向實作</p>
@@ -249,7 +222,7 @@
                             <li>團隊開發 - 真實軟體開發團隊的運作及分工 (Agile敏捷, kanban 看板, CI 自動化建置)</li>
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <span class="d-block">第 6 - 7 月</span>
                         <img src="./images/plan03.png" alt="">
                         <p class="h4">作品發表</p>
@@ -259,7 +232,7 @@
                             <li>個人履歷準備 – GitHub, CodePen …</li>
                         </ul>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <span class="d-block">未來及展望</span>
                         <img src="./images/plan04.png" alt="">
                         <p class="h4">就業及企業導師諮詢</p>
@@ -271,14 +244,20 @@
                 </div>
             </div>
             <div class="title-bg">
-                <img src="./images/title-back.png" alt="">
-                <div class="txt">
-                    <p>在課程及作品實作中，將採用這些工具 - 熟悉實務上軟體開發團隊的運作、分工及真實專案的流程</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./images/title-back.png" class="">
+                            <div class="txt">
+                                <p>在課程及作品實作中，將採用這些工具 - 熟悉實務上軟體開發團隊的運作、分工及真實專案的流程</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container team">
                 <div class="row text-center">
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <div class="team-img row">
                             <div class="col"><img src="/images/git01.png" alt=""></div>
                             <div class="col"><img src="/images/git02.png" alt=""></div>
@@ -289,7 +268,7 @@
                                 Review 檢閱，並熟悉 Open Source 生態及工具</li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <div class="team-img row">
                             <div class="col"><img src="./images/VS.png" alt=""></div>
                             <div class="col"><img src="./images/Trello.png" alt=""></div>
@@ -301,7 +280,7 @@
                             <li>也可透過目前許多開發團隊常用的專案管理及看板工具 - Trello 進行工作分派、追蹤、或整個班的工作事項管理</li>
                         </ul>
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-6 col-lg-3">
                         <div class="team-img row">
                             <div class="col"><img src="./images/Azure.png" alt=""></div>
                             <div class="col"><img src="./images/AzureSQL.png" alt=""></div>
@@ -312,7 +291,7 @@
                                 Azure當成作品及專案應用系統執行的雲端平台，包括 Azure App Service 建立網站服務、Azure SQL Database 建立資料庫服務</li>
                         </ul>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-12 col-md-6 col-lg-3 ">
                         <div class="team-img row">
                             <div class="col"><img src="./images/MSTeamsIcon.png" alt=""></div>
                             <div class="col"><img src="./images/slack.png" alt=""></div>
