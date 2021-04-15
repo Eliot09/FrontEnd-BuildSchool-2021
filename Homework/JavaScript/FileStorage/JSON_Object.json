@@ -7,8 +7,8 @@
         "Residence address":"Taoyuan"
     },
     "phone":{
-        "Local calls":"02-29881055",
-        "cellphone number":"0933-852177"
+        "Local_calls":"02-29881055",
+        "cellphone_number":"0933-852177"
     },
     "cars":["BMW", "Nissan GT-R", "Audi"]
 }
