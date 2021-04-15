@@ -1,0 +1,14 @@
+{
+    "firstname":"Kevin",
+    "height":180,
+    "email":"Kevin@gmail.com",
+    "city":{
+        "mailing address":"Taipei",
+        "Residence address":"Taoyuan"
+    },
+    "phone":{
+        "Local calls":"02-29881055",
+        "cellphone number":"0933-852177"
+    },
+    "cars":["BMW", "Nissan GT-R", "Audi"]
+}
